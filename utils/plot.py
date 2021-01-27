@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
 from utils.metric import metrics_list
 from utils.preprocess import preprocs_list
-
+import numpy as np
 def generateChart(scores):
+
+    scores =np.array(scores).astype('float')
 
     I = scores.shape[0]
 
